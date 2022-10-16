@@ -8,20 +8,27 @@ const AssignmentMarks = () => {
   }, []);
 
   const functionOne = () => {
-    const marks = 55;
+    const marks = 80;
 
     //If condition
-    if (marks >= 75) {
-      console.log('Result: A ');
-    } else if (marks >= 65 && marks < 75) {
-      console.log('Result: B ');
-    } else if (marks >= 55 && marks < 65) {
-      console.log('Result: C ');
-    } else if (marks >= 35 && marks < 55) {
-      console.log('Result: S ');
-    } else {
-      console.log('Result: Fail ');
-    }
+    // if (marks >= 75) {
+    //   console.log('Result: A ');
+    // } else if (marks >= 65 && marks < 75) {
+    //   console.log('Result: B ');
+    // } else if (marks >= 55 && marks < 65) {
+    //   console.log('Result: C ');
+    // } else if (marks >= 35 && marks < 55) {
+    //   console.log('Result: S ');
+    // } else {
+    //   console.log('Result: Fail ');
+    // }
+
+    //Ternary Operator
+    marks >= 75 ? console.log('Result: A ')
+    : marks >= 65 ? console.log('Result: B ')
+    : marks >= 55 ? console.log('Result: C ')
+    : marks >= 35 ? console.log('Result: S ')
+    : console.log('Result: Fail ');
   };
 
   return (
