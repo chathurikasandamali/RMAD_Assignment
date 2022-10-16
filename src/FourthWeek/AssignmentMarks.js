@@ -8,16 +8,16 @@ const AssignmentMarks = () => {
   }, []);
 
   const functionOne = () => {
-    const marks = 80;
+    const marks = 55;
 
     //If condition
-    if (marks > 75) {
+    if (marks >= 75) {
       console.log('Result: A ');
-    } else if (marks > 65 && marks < 75) {
+    } else if (marks >= 65 && marks < 75) {
       console.log('Result: B ');
-    } else if (marks > 55 && marks < 65) {
+    } else if (marks >= 55 && marks < 65) {
       console.log('Result: C ');
-    } else if (marks > 35 && marks < 55) {
+    } else if (marks >= 35 && marks < 55) {
       console.log('Result: S ');
     } else {
       console.log('Result: Fail ');
@@ -32,4 +32,3 @@ const AssignmentMarks = () => {
 };
 
 export default AssignmentMarks;
-	
